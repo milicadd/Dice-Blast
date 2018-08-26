@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta charset="UTF-8">
+    <meta name="description" content="DiceBlast is a funny logic game, which aim is to match 3 or more same colored Dices, by exchanging 2 adjacent elements.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DiceBlast</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel = "stylesheet" type="text/css">
+</head>
+
+<body>
+        <div id = "header">
+                <img src = "slicica1.jpg" width="50" height="50">
+            </div>
+    <h1>DiceBlast </h1>
+   
+
+    <div id="playground" style="display: block">
+
+          
+         
+        <div id="infoBox">
+            <div style="float: right">
+                <span id="topScoreLabel">Score to win : </span>
+                <span id="topScore">500</span>
+                <span id="moves">0</span> Move(s)
+            </div>
+            
+            <div style="float: left">
+                <span id="scoreLabel">Your score:   </span>
+                <span id="score">0</span>
+            </div>
+           
+        </div>
+    
+        <div id="tile">
+            <div id="p_0" class="tile" style="left: 0px; top: 0px; background-color: rgb(198, 50, 162); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_1" class="tile" style="left: 0px; top: 60px; background-color: rgb(221, 193, 57); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_2" class="tile" style="left: 0px; top: 120px; background-color: rgb(198, 50, 162); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_3" class="tile" style="left: 0px; top: 180px; background-color: rgb(29, 134, 217); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_4" class="tile" style="left: 0px; top: 240px; background-color: rgb(218, 58, 68); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_5" class="tile" style="left: 0px; top: 300px; background-color: rgb(29, 134, 217); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_6" class="tile" style="left: 0px; top: 360px; background-color: rgb(235, 102, 45); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_7" class="tile" style="left: 0px; top: 420px; background-color: rgb(235, 102, 45); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_8" class="tile" style="left: 60px; top: 0px; background-color: rgb(29, 134, 217); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_9" class="tile" style="left: 60px; top: 60px; background-color: rgb(198, 50, 162); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_10" class="tile" style="left: 60px; top: 120px; background-color: rgb(133, 198, 78); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_11" class="tile" style="left: 60px; top: 180px; background-color: rgb(133, 198, 78); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_12" class="tile" style="left: 60px; top: 240px; background-color: rgb(48, 48, 48); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_13" class="tile" style="left: 60px; top: 300px; background-color: rgb(218, 58, 68); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_14" class="tile" style="left: 60px; top: 360px; background-color: rgb(133, 198, 78); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_15" class="tile" style="left: 60px; top: 420px; background-color: rgb(198, 50, 162); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_16" class="tile" style="left: 120px; top: 0px; background-color: rgb(133, 198, 78); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_17" class="tile" style="left: 120px; top: 60px; background-color: rgb(221, 193, 57); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_18" class="tile" style="left: 120px; top: 120px; background-color: rgb(133, 198, 78); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_19" class="tile" style="left: 120px; top: 180px; background-color: rgb(198, 50, 162); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_20" class="tile" style="left: 120px; top: 240px; background-color: rgb(218, 58, 68); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_21" class="tile" style="left: 120px; top: 300px; background-color: rgb(48, 48, 48); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_22" class="tile" style="left: 120px; top: 360px; background-color: rgb(29, 134, 217); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_23" class="tile" style="left: 120px; top: 420px; background-color: rgb(235, 102, 45); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_24" class="tile" style="left: 180px; top: 0px; background-color: rgb(133, 198, 78); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_25" class="tile" style="left: 180px; top: 60px; background-color: rgb(221, 193, 57); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_26" class="tile" style="left: 180px; top: 120px; background-color: rgb(218, 58, 68); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_27" class="tile" style="left: 180px; top: 180px; background-color: rgb(221, 193, 57); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_28" class="tile" style="left: 180px; top: 240px; background-color: rgb(29, 134, 217); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_29" class="tile" style="left: 180px; top: 300px; background-color: rgb(29, 134, 217); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_30" class="tile" style="left: 180px; top: 360px; background-color: rgb(218, 58, 68); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_31" class="tile" style="left: 180px; top: 420px; background-color: rgb(48, 48, 48); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_32" class="tile" style="left: 240px; top: 0px; background-color: rgb(218, 58, 68); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_33" class="tile" style="left: 240px; top: 60px; background-color: rgb(235, 102, 45); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_34" class="tile" style="left: 240px; top: 120px; background-color: rgb(48, 48, 48); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_35" class="tile" style="left: 240px; top: 180px; background-color: rgb(235, 102, 45); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_36" class="tile" style="left: 240px; top: 240px; background-color: rgb(221, 193, 57); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_37" class="tile" style="left: 240px; top: 300px; background-color: rgb(235, 102, 45); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_38" class="tile" style="left: 240px; top: 360px; background-color: rgb(218, 58, 68); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_39" class="tile" style="left: 240px; top: 420px; background-color: rgb(218, 58, 68); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_40" class="tile" style="left: 300px; top: 0px; background-color: rgb(29, 134, 217); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_41" class="tile" style="left: 300px; top: 60px; background-color: rgb(48, 48, 48); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_42" class="tile" style="left: 300px; top: 120px; background-color: rgb(48, 48, 48); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_43" class="tile" style="left: 300px; top: 180px; background-color: rgb(221, 193, 57); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_44" class="tile" style="left: 300px; top: 240px; background-color: rgb(29, 134, 217); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_45" class="tile" style="left: 300px; top: 300px; background-color: rgb(198, 50, 162); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_46" class="tile" style="left: 300px; top: 360px; background-color: rgb(198, 50, 162); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_47" class="tile" style="left: 300px; top: 420px; background-color: rgb(221, 193, 57); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_48" class="tile" style="left: 360px; top: 0px; background-color: rgb(29, 134, 217); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_49" class="tile" style="left: 360px; top: 60px; background-color: rgb(221, 193, 57); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_50" class="tile" style="left: 360px; top: 120px; background-color: rgb(133, 198, 78); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_51" class="tile" style="left: 360px; top: 180px; background-color: rgb(48, 48, 48); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_52" class="tile" style="left: 360px; top: 240px; background-color: rgb(221, 193, 57); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_53" class="tile" style="left: 360px; top: 300px; background-color: rgb(218, 58, 68); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_54" class="tile" style="left: 360px; top: 360px; background-color: rgb(133, 198, 78); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_55" class="tile" style="left: 360px; top: 420px; background-color: rgb(29, 134, 217); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_56" class="tile" style="left: 420px; top: 0px; background-color: rgb(133, 198, 78); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_57" class="tile" style="left: 420px; top: 60px; background-color: rgb(218, 58, 68); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_58" class="tile" style="left: 420px; top: 120px; background-color: rgb(133, 198, 78); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_59" class="tile" style="left: 420px; top: 180px; background-color: rgb(235, 102, 45); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_60" class="tile" style="left: 420px; top: 240px; background-color: rgb(235, 102, 45); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_61" class="tile" style="left: 420px; top: 300px; background-color: rgb(29, 134, 217); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_62" class="tile" style="left: 420px; top: 360px; background-color: rgb(29, 134, 217); cursor: pointer;" onmousedown="clickMe(this);"></div>
+            <div id="p_63" class="tile" style="left: 420px; top: 420px; background-color: rgb(198, 50, 162); cursor: pointer;" onmousedown="clickMe(this);"></div>
+           
+           
+        </div>
+        <div id="time" style="top:485px;" >
+                 
+        </div>
+    </div> 
+        <div id="newGame">
+            <button id="new_game" type="submit"  onclick="newGame()">New Game</button>
+           
+        </div>
+   
+        <div id="overlay" class="overlay">
+                <div class="popup">
+                    <h2>Congratulations 🎉</h2>
+                    <a class="close" href=# >×</a>
+                    <div class="content-1">
+                        Congratulations you're a winner 🎉🎉
+                    </div>
+                    <div class="content-2">
+                        <p>You made <span id=finalMove> </span> moves </p>
+                        <p>in <span id=totalTime> </span> </p>
+                    </div>
+                    <button id="play-again" onclick="newGame()">
+                        Play again 😄</a>
+                    </button>
+                </div>
+            </div>
+            <div id="overlay2">
+                <div class="popup2">
+                    <h2>GAME OVER 😞 😞 😞</h2>
+                    <a class="close" href=# >×</a>
+                </div>
+            </div>
+     
+    <div id = "footer">
+        <b>DiceBlast</b>
+        is a simple match-same game. Game developed in HTML/JAVA SCRIPT/CSS.
+        <br>
+       • Pure HTML/CSS/JS
+       <br>
+       <a href="http://www.google.com/fonts" rel="external" title="Hundreds of free, open-source fonts optimized for the web">Google Fonts</a>
+      <br>
+      Author
+      <br>
+      • Milica Marinković 
+      <br>
+      • milica.bogdanov@yahoo.com
+      <br>
+      •062/222-770
+    
+    <div>
+    <script src="app.js"></script>
+    
+</body>
+
+</html>

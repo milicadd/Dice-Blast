@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'Patrick Hand SC';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Patrick Hand SC'), local('PatrickHandSC-Regular'), url(http://fonts.gstatic.com/s/patrickhandsc/v5/0nkwC9f7MfsBiWcLtY65AWDK873lgSK7FQc.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+
+body{
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-image: url(pozadina.jpg)
+   
+}
+
+h1{
+	color: #e951e9;
+    font-weight: bolder;
+    font-family: 'Patrick Hand SC', cursive;
+	font-size: 40px;
+	margin-bottom: 25px;
+	margin-top: 15px;
+	text-align: center;
+}
+
+#playground {
+	width: 480px;
+	height:480px;
+	margin: 40px auto 20px auto;
+	position: relative;
+ 	border: 3px solid rgb(172, 71, 212);
+	padding-right: 1px;
+    padding-bottom: 1px;
+    font-family: 'Patrick Hand SC', cursive;
+	
+}
+
+.tile {
+	width: 60px;
+	height: 60px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop, src='tile1.png');
+}
+
+.tile[class] {
+	background: url(tile1.png);
+}    
+
+.tile {
+	position: absolute;		
+}
+
+div#header{
+	text-align:center;
+	width:100%;
+	border-bottom:1px solid none;
+}
+
+div#footer{
+    font-family: 'Patrick Hand SC', cursive;
+    color: rgb(241, 233, 233);
+	border-top:1px solid none;
+	padding:10px 0;
+	text-align:center;
+	width:100%;
+}
+
+
+#time {
+
+	top: 0px;
+	left: 140px;
+	width: 200px;
+	height: 22px;
+	color: aqua;
+	font-weight:bolder;
+	border: 2px solid rgb(48, 208, 181);
+	position: absolute;
+	text-align: center;
+
+}
+
+#infoBox{
+	position: absolute;
+	top: -30px;
+    font-size: 23px;
+    color: aqua
+    
+}
+
+#scoreLabel{
+	font-size: 23px;
+
+}
+
+#score{
+	font-size: 23px;
+	font-weight: bolder;
+}
+
+#topScoreLabel{
+	font-size: 23px;
+	padding-left: 30px;
+	
+}
+
+#topScore{
+	font-size: 23px;
+	font-weight: bolder;
+}
+#moves{
+    padding-left: 25px;
+}
+#newGame{
+
+	font-size: 20px;
+	font-weight: bolder;
+	font-family: 'Patrick Hand SC', cursive;
+	text-align: center;
+	width: auto;
+    padding: 20px;
+	height: 25px;
+	color: aqua;
+
+}
+#new_game{
+	font-size: 25px;
+	font-weight: bolder;
+	font-family: 'Patrick Hand SC', cursive;
+	background-color: aqua
+}
+
+/*
+ * Style za  congratulations 
+ */
+#overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity:0;
+}
+
+
+.popup {
+	text-align: center;
+	margin: 70px auto;
+	padding: 20px;
+	background:rgb(198, 113, 231);
+	border-radius: 5px;
+	width: 50%;
+	position: relative;
+	transition: all 5s ease-in-out;
+	font-family: 'Patrick Hand SC', cursive;
+}
+  
+.popup h2 {
+	
+	margin-top: 0;
+	color: aquamarine;
+	font-family:  'Patrick Hand SC', cursive;
+}
+
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color:aqua;
+}
+
+.popup .close:hover {
+	color: rgb(32, 247, 211);
+}
+.popup .content-1 .content-2{
+ 
+	max-height: 30%;
+	overflow: auto;
+	text-align: center;
+	color: azure;
+}
+#play-again{
+	font-size: 20px;
+	font-weight: bolder;
+	font-family: 'Patrick Hand SC', cursive;
+	background-color: aqua;
+
+}
+#overlay2{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity:0;
+	
+}
